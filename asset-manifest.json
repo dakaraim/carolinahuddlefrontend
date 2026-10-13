@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/https://dakaraim.github.io/carolinahuddlefrontend/static/css/main.f129c785.css",
-    "main.js": "/https://dakaraim.github.io/carolinahuddlefrontend/static/js/main.5d1a767f.js",
-    "index.html": "/https://dakaraim.github.io/carolinahuddlefrontend/index.html",
-    "main.f129c785.css.map": "/https://dakaraim.github.io/carolinahuddlefrontend/static/css/main.f129c785.css.map",
-    "main.5d1a767f.js.map": "/https://dakaraim.github.io/carolinahuddlefrontend/static/js/main.5d1a767f.js.map"
+    "main.css": "/carolinahuddlefrontend/static/css/main.f129c785.css",
+    "main.js": "/carolinahuddlefrontend/static/js/main.5d1a767f.js",
+    "index.html": "/carolinahuddlefrontend/index.html",
+    "main.f129c785.css.map": "/carolinahuddlefrontend/static/css/main.f129c785.css.map",
+    "main.5d1a767f.js.map": "/carolinahuddlefrontend/static/js/main.5d1a767f.js.map"
   },
   "entrypoints": [
     "static/css/main.f129c785.css",
