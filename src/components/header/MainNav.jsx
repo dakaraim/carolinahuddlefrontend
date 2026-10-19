@@ -4,7 +4,9 @@ const MainNav = () => {
     return (
         <nav className="main-nav">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li>
+                    <a href={process.env.PUBLIC_URL + "/"}>Home</a>
+                </li>
                 <li><a href="/about">Forum</a></li>
                 <li><a href="/about">Team</a></li>
                 <li><a href="/about">Games</a></li>
