@@ -1,23 +1,33 @@
 .header-top {
-    max-width: 1200px;
-    min-height: 75px;
-    margin: auto;
-    padding: 5px 20px;
+    position: relative;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: space-between;
+    padding: 15px 30px;
+    min-height: 100px;
+    background-color: #000;
+}
+
+.header-top > a {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .header-logo {
+    display: block;
     width: 220px;
-    max-height: 70px;
+    max-width: 100%;
+    height: auto;
     object-fit: contain;
 }
 
 .header-buttons {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
+    margin-left: auto;
 }
 
 .search-button {
