@@ -1,7 +1,6 @@
 import "./Header.css";
 import HeaderTop from "./HeaderTop";
-import "./MainNav";
-
+import MainNav from "./MainNav";
 const Header = () => {
     return (
         <header className="main-header">
