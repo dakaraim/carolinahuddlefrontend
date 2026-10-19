@@ -6,7 +6,7 @@ const HeaderTop = () => {
         <div className="header-top">
             <a href="/">
                 <img
-                    src="/images/logo.png"
+                    src={process.env.PUBLIC_URL + "/images/logo.png"}
                     alt="Carolina Huddle Logo"
                     className="header-logo"
                 />
