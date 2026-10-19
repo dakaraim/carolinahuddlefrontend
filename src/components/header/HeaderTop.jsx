@@ -1,12 +1,12 @@
-
+import logo from "../../images/logo.png";
 import "./HeaderTop.css";
 
 const HeaderTop = () => {
     return (
         <div className="header-top">
-            <a href="/">
+            <a href={process.env.PUBLIC_URL + "/"}>
                 <img
-                    src={process.env.PUBLIC_URL + "/images/logo.png"}
+                    src={logo.png}
                     alt="Carolina Huddle Logo"
                     className="header-logo"
                 />
