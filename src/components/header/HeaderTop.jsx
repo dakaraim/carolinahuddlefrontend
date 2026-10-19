@@ -1,4 +1,3 @@
-import logo from "../../images/logo.png";
 import "./HeaderTop.css";
 
 const HeaderTop = () => {
@@ -6,7 +5,7 @@ const HeaderTop = () => {
         <div className="header-top">
             <a href={process.env.PUBLIC_URL + "/"}>
                 <img
-                    src={logo.png}
+                    src={`${process.env.PUBLIC_URL}/images/logo.png`}
                     alt="Carolina Huddle Logo"
                     className="header-logo"
                 />
