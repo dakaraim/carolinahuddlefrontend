@@ -1,3 +1,4 @@
+
 import Hero from "../components/hero/hero";
 import GameDiscussion from "../components/gamediscussion/gamediscussion";
 import LiveScore from "../components/livescore/livescore";
@@ -7,14 +8,10 @@ import AboutHome from "../components/about/about";
 
 function Home() {
     return (
-        <main className="home-page">
+        <main>
             <Hero />
-
-            <div className="home-content">
-                <GameDiscussion />
-                <LiveScore />
-            </div>
-
+            <GameDiscussion />
+            <LiveScore />
             <LatestNews />
             <Explore />
             <AboutHome />
