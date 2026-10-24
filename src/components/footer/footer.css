@@ -1,6 +1,6 @@
 
 #main-footer {
-    background-color: #050505;
+    background: #050505;
     color: #fff;
     border-top: 3px solid #00a9e0;
 }
@@ -19,8 +19,8 @@
 .footer-logo {
     display: block;
     width: 180px;
-    max-width: 100%;
-    height: auto;
+    max-height: 80px;
+    object-fit: contain;
     margin-bottom: 15px;
 }
 
@@ -38,6 +38,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
+    min-width: 0;
 }
 
 .footer-content h3 {
@@ -49,8 +50,6 @@
 .footer-content a {
     color: #ccc;
     font-size: 14px;
-    text-decoration: none;
-    transition: color 0.2s ease;
     overflow-wrap: anywhere;
 }
 

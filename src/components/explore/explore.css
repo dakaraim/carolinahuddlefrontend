@@ -1,18 +1,19 @@
 
 #explore {
-    padding: 50px 30px;
-    background-color: #111;
-    color: #fff;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 45px 5%;
 }
 
 #explore .section-title {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 #explore .section-title h2 {
     margin: 0;
+    color: #fff;
     font-size: 28px;
-    text-transform: uppercase;
 }
 
 #explore .section-title h2 span {
@@ -22,76 +23,68 @@
 #explore-cards {
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
-    gap: 20px;
+    gap: 18px;
 }
 
 .explore-card {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    min-width: 0;
     min-height: 170px;
-    padding: 25px 20px;
-    border: 1px solid #333;
-    border-top: 3px solid #00a9e0;
-    background-color: #181818;
+    padding: 22px 18px;
+    background: #111;
+    border: 1px solid #292929;
     color: #fff;
-    text-decoration: none;
-    transition: border-color 0.2s ease, background-color 0.2s ease;
+    transition: background 0.2s ease, border-color 0.2s ease;
 }
 
 .explore-card:hover {
-    background-color: #222;
+    background: #171717;
     border-color: #00a9e0;
 }
 
 .explore-card h3 {
-    margin: 0 0 15px;
-    font-size: 18px;
+    margin: 0 0 12px;
+    color: #00a9e0;
+    font-size: 16px;
 }
 
 .explore-card p {
-    margin: 0;
-    color: #bbb;
-    font-size: 14px;
+    margin: 0 0 25px;
+    color: #ccc;
+    font-size: 13px;
     line-height: 1.6;
 }
 
 .explore-arrow {
-    align-self: flex-end;
-    margin-top: 20px;
+    margin-top: auto;
     color: #00a9e0;
-    font-size: 24px;
+    font-size: 23px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
     #explore-cards {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
 
-@media (max-width: 650px) {
-    #explore {
-        padding: 35px 20px;
+@media (max-width: 700px) {
+    #explore-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     #explore .section-title h2 {
         font-size: 23px;
     }
+}
 
+@media (max-width: 450px) {
     #explore-cards {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 15px;
+        grid-template-columns: 1fr;
     }
 
     .explore-card {
-        min-height: 155px;
-        padding: 20px 15px;
-    }
-}
-
-@media (max-width: 400px) {
-    #explore-cards {
-        grid-template-columns: 1fr;
+        min-height: 130px;
     }
 }
