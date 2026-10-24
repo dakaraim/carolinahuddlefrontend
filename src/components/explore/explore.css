@@ -1,19 +1,19 @@
-
 #explore {
     width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 45px 5%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 35px 20px;
+    background-color: #000;
+    color: #fff;
 }
 
 #explore .section-title {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 #explore .section-title h2 {
     margin: 0;
-    color: #fff;
-    font-size: 28px;
+    font-size: 27px;
 }
 
 #explore .section-title h2 span {
@@ -23,36 +23,29 @@
 #explore-cards {
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
-    gap: 18px;
+    gap: 15px;
 }
 
 .explore-card {
-    position: relative;
     display: flex;
     flex-direction: column;
     min-width: 0;
-    min-height: 170px;
-    padding: 22px 18px;
-    background: #111;
-    border: 1px solid #292929;
+    min-height: 150px;
+    padding: 18px;
+    background-color: #000;
     color: #fff;
-    transition: background 0.2s ease, border-color 0.2s ease;
-}
-
-.explore-card:hover {
-    background: #171717;
-    border-color: #00a9e0;
+    border: 1px solid #333;
 }
 
 .explore-card h3 {
-    margin: 0 0 12px;
+    margin: 0 0 10px;
     color: #00a9e0;
     font-size: 16px;
 }
 
 .explore-card p {
-    margin: 0 0 25px;
-    color: #ccc;
+    margin: 0 0 15px;
+    color: #ddd;
     font-size: 13px;
     line-height: 1.6;
 }
@@ -60,31 +53,27 @@
 .explore-arrow {
     margin-top: auto;
     color: #00a9e0;
-    font-size: 23px;
+    font-size: 22px;
 }
 
-@media (max-width: 1100px) {
+.explore-card:hover {
+    border-color: #00a9e0;
+}
+
+@media (max-width: 900px) {
     #explore-cards {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     #explore-cards {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-
-    #explore .section-title h2 {
-        font-size: 23px;
-    }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 400px) {
     #explore-cards {
         grid-template-columns: 1fr;
-    }
-
-    .explore-card {
-        min-height: 130px;
     }
 }

@@ -1,19 +1,18 @@
-
 #about-home {
-    padding: 50px 7%;
-    background: #111;
-    border-top: 2px solid #00a9e0;
+    width: 100%;
+    padding: 35px 20px;
+    background-color: #000;
+    color: #fff;
     text-align: center;
 }
 
 #about-home .section-title {
-    margin-bottom: 22px;
+    margin-bottom: 20px;
 }
 
 #about-home .section-title h2 {
     margin: 0;
-    color: #fff;
-    font-size: 28px;
+    font-size: 27px;
 }
 
 #about-home .section-title h2 span {
@@ -22,23 +21,22 @@
 
 #about-home > p {
     max-width: 850px;
-    margin: 0 auto;
-    color: #ccc;
-    font-size: 16px;
-    line-height: 1.9;
+    margin: auto;
+    color: #ddd;
+    font-size: 15px;
+    line-height: 1.8;
 }
 
 @media (max-width: 600px) {
     #about-home {
-        padding: 35px 6%;
+        padding: 25px 15px;
     }
 
     #about-home .section-title h2 {
-        font-size: 22px;
+        font-size: 23px;
     }
 
     #about-home > p {
         font-size: 14px;
-        line-height: 1.7;
     }
 }
