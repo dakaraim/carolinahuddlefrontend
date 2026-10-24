@@ -1,0 +1,70 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #080808;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    width: 100%;
+}
+
+.home-content {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 45px 5%;
+}
+
+#latest-news,
+#explore {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 45px 5%;
+}
+
+.section-title,
+.home-box-title {
+    margin-bottom: 25px;
+}
+
+.section-title h2,
+.home-box-title h2 {
+    color: #fff;
+    font-size: 28px;
+    margin: 0;
+}
+
+.section-title h2 span,
+.home-box-title h2 span {
+    color: #00a9e0;
+}
+
+@media (max-width: 768px) {
+    .home-content {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 30px 5%;
+    }
+
+    #latest-news,
+    #explore {
+        padding: 30px 5%;
+    }
+
+    .section-title h2,
+    .home-box-title h2 {
+        font-size: 24px;
+    }
+}
