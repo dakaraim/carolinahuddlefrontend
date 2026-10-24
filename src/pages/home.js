@@ -1,18 +1,24 @@
 
-import About from "../components/about/about";
-import Explore from "../components/explore/explore";
-import GameDiscussion from "../components/gamediscussion/gamediscussion";
-import LiveScore from "../components/livescore/livescore";
-import LatestNews from "../components/latestnews/latestnews";
+import Hero from "../components/hero/Hero";
+import GameDiscussion from "../components/gamediscussion/GameDiscussion";
+import LiveScore from "../components/livescore/LiveScore";
+import LatestNews from "../components/latestnews/LatestNews";
+import Explore from "../components/explore/Explore";
+import AboutHome from "../components/about/About";
 
 function Home() {
     return (
         <main className="home-page">
-            <About />
-            <Explore />
-            <GameDiscussion />
-            <LiveScore />
+            <Hero />
+
+            <div className="home-content">
+                <GameDiscussion />
+                <LiveScore />
+            </div>
+
             <LatestNews />
+            <Explore />
+            <AboutHome />
         </main>
     );
 }
