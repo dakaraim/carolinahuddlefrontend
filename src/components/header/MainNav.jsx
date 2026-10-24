@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import "./MainNav.css";
 
@@ -7,7 +6,7 @@ const MainNav = () => {
         <nav className="main-nav">
             <ul>
                 <li><Link to="/about">Home</Link></li>
-                <li><Link to="/about">Forum</Link></li>
+                <li><Link to="/forum">Forum</Link></li>
                 <li><a href="/about">Team</a></li>
                 <li><a href="/about">Games</a></li>
                 <li><a href="/about">History</a></li>
