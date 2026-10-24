@@ -1,5 +1,5 @@
 
-import "./LiveScore.css";
+import "./livescore.css";
 
 const teamStats = [
     {

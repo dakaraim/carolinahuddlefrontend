@@ -1,5 +1,5 @@
 
-import "./LatestNews.css";
+import "./latestnews.css";
 
 const newsItems = [
     {

@@ -1,4 +1,4 @@
-import TopicItem from "./topicItem";
+import TopicItem from "./topicitem";
 
 const topics = [
   {

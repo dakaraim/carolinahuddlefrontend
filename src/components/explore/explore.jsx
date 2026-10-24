@@ -1,5 +1,5 @@
 
-import "./Explore.css";
+import "./explore.css";
 
 const exploreItems = [
     {

@@ -1,5 +1,5 @@
 
-import "./GameDiscussion.css";
+import "./gamediscussion.css";
 
 const discussions = [
     {
