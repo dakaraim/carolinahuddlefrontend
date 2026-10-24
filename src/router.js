@@ -13,7 +13,6 @@ function Router() {
         </HashRouter>
     );
 }
-
 export default Router;
 
 

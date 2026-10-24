@@ -1,10 +1,9 @@
-
-import Hero from "../components/hero/Hero";
-import GameDiscussion from "../components/gamediscussion/GameDiscussion";
-import LiveScore from "../components/livescore/LiveScore";
-import LatestNews from "../components/latestnews/LatestNews";
-import Explore from "../components/explore/Explore";
-import AboutHome from "../components/about/About";
+import Hero from "../components/hero/hero";
+import GameDiscussion from "../components/gamediscussion/gamediscussion";
+import LiveScore from "../components/livescore/livescore";
+import LatestNews from "../components/latestnews/latestnews";
+import Explore from "../components/explore/explore";
+import AboutHome from "../components/about/about";
 
 function Home() {
     return (
