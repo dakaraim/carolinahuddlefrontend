@@ -1,11 +1,9 @@
+import ForumHeader from "../components/forum/forumheader";
+import ForumTabs from "../components/forum/forumtabs";
+import TopicList from "../components/forum/topiclist";
+import TopContributors from "../components/forum/topcontributors";
 
-import ForumHeader from "../components/forum/ForumHeader";
-import ForumTabs from "../components/forum/ForumTabs";
-import TopicList from "../components/forum/TopicList";
-import CreatePost from "../components/forum/CreatePost";
-import TopContributors from "../components/forum/TopContributors";
-
-import "../components/forum/Forum.css";
+import "../components/forum/forum.css";
 
 function Forum() {
     return (
@@ -19,7 +17,6 @@ function Forum() {
                 </div>
 
                 <aside id="forum-sidebar">
-                    <CreatePost />
                     <TopContributors />
                 </aside>
             </section>
