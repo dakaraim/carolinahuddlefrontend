@@ -1,182 +1,93 @@
 
 #game-discussion {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 28px;
-    background-color: #000;
-    color: #fff;
+    background: #06131b;
+    border: 2px solid #00a9e0;
+    border-radius: 12px;
+    padding: 0;
     overflow: hidden;
 }
 
-#game-discussion *,
-#game-discussion *::before,
-#game-discussion *::after {
-    box-sizing: border-box;
-}
-
-/* Section heading */
 #game-discussion .home-box-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding-bottom: 14px;
-    margin-bottom: 8px;
+    padding: 20px 28px;
+    margin: 0;
     border-bottom: 2px solid #00a9e0;
 }
 
 #game-discussion .home-box-title h2 {
-    margin: 0;
-    font-size: clamp(21px, 3vw, 28px);
-}
-
-#game-discussion .home-box-title h2 span {
-    color: #00a9e0;
+    font-size: clamp(22px, 2vw, 38px);
 }
 
 #game-discussion .home-box-title > p {
-    margin: 0;
-    color: #00a9e0;
-    font-size: 13px;
-    font-weight: bold;
+    font-size: 16px;
 }
 
-/* Individual discussion posts */
 .discussion-post {
-    display: flex;
-    align-items: flex-start;
-    gap: 16px;
-    padding: 20px 0;
-    border-bottom: 1px solid #333;
-}
-
-.discussion-post:last-of-type {
-    border-bottom: 1px solid #333;
+    gap: 18px;
+    padding: 18px 24px;
+    border-bottom: 1px solid #203440;
 }
 
 .user-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    width: 44px;
-    height: 44px;
-    background-color: #00a9e0;
-    color: #000;
-    border-radius: 3px;
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.post-content {
-    flex: 1;
-    min-width: 0;
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    font-size: 18px;
 }
 
 .post-content h3 {
-    margin: 0 0 8px;
-    color: #fff;
-    font-size: 17px;
-    line-height: 1.4;
-    overflow-wrap: anywhere;
+    color: #00a9e0;
+    font-size: 20px;
 }
 
 .post-content p {
-    margin: 0 0 10px;
-    color: #d0d0d0;
-    font-size: 14px;
-    line-height: 1.7;
-    overflow-wrap: anywhere;
+    color: #f1f1f1;
+    font-size: 16px;
+    line-height: 1.45;
 }
 
-.post-content small {
-    display: block;
-    color: #999;
-    font-size: 12px;
-    line-height: 1.5;
-}
-
-/* Forum link */
 #home-forum-button {
-    display: flex;
-    justify-content: center;
-    margin-top: 24px;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0 24px 18px;
 }
 
 #home-forum-button a {
-    display: inline-block;
-    padding: 12px 20px;
-    border: 1px solid #00a9e0;
-    border-radius: 3px;
-    color: #00a9e0;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    transition: background-color 0.2s ease, color 0.2s ease;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    font-size: 16px;
 }
 
 #home-forum-button a:hover {
-    background-color: #00a9e0;
-    color: #000;
+    background: transparent;
+    color: #fff;
 }
 
-/* Tablet */
-@media (max-width: 768px) {
-    #game-discussion {
-        padding: 22px;
+@media (max-width: 480px) {
+    #game-discussion .home-box-title {
+        padding: 16px;
     }
 
     .discussion-post {
         gap: 12px;
-        padding: 17px 0;
+        padding: 16px;
+    }
+
+    .user-icon {
+        width: 42px;
+        height: 42px;
+        font-size: 14px;
     }
 
     .post-content h3 {
         font-size: 16px;
     }
-}
-
-/* Mobile */
-@media (max-width: 480px) {
-    #game-discussion {
-        padding: 18px 12px;
-    }
-
-    #game-discussion .home-box-title {
-        align-items: flex-start;
-    }
-
-    #game-discussion .home-box-title > p {
-        font-size: 12px;
-    }
-
-    .discussion-post {
-        gap: 10px;
-        padding: 16px 0;
-    }
-
-    .user-icon {
-        width: 36px;
-        height: 36px;
-        font-size: 13px;
-    }
-
-    .post-content h3 {
-        font-size: 15px;
-    }
 
     .post-content p {
         font-size: 13px;
-        line-height: 1.6;
     }
 
-    .post-content small {
-        font-size: 11px;
-    }
-
-    #home-forum-button a {
-        width: 100%;
+    #home-forum-button {
+        padding: 0 16px 16px;
     }
 }

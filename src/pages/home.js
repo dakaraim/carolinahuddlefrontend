@@ -10,8 +10,12 @@ function Home() {
     return (
         <main>
             <Hero />
-            <GameDiscussion />
-            <LiveScore />
+
+            <div className="home-feature-grid">
+                <GameDiscussion />
+                <LiveScore />
+            </div>
+
             <LatestNews />
             <Explore />
             <AboutHome />
