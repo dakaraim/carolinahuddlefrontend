@@ -1,3 +1,5 @@
+
+import { Link } from "react-router-dom";
 import "./MainNav.css";
 
 const MainNav = () => {
@@ -5,15 +7,29 @@ const MainNav = () => {
         <nav className="main-nav">
             <ul>
                 <li>
-                    <a href={process.env.PUBLIC_URL + "/"}>Home</a>
+                    <Link to="/">Home</Link>
                 </li>
-                <li><a href="/about">Forum</a></li>
-                <li><a href="/about">Team</a></li>
-                <li><a href="/about">Games</a></li>
-                <li><a href="/about">History</a></li>
-                <li><a href="/about">News</a></li>
-                <li><a href="/about">HOF</a></li>
-                <li><a href="/contact">Contact</a></li>
+                <li>
+                    <Link to="/forum">Forum</Link>
+                </li>
+                <li>
+                    <Link to="/team">Team</Link>
+                </li>
+                <li>
+                    <Link to="/games">Games</Link>
+                </li>
+                <li>
+                    <Link to="/history">History</Link>
+                </li>
+                <li>
+                    <Link to="/news">News</Link>
+                </li>
+                <li>
+                    <Link to="/hof">HOF</Link>
+                </li>
+                <li>
+                    <Link to="/contact">Contact</Link>
+                </li>
             </ul>
         </nav>
     );
