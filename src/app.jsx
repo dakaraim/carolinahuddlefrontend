@@ -24,7 +24,9 @@ function App() {
                 </div>
 
                 <LatestNews />
+
                 <Explore />
+
                 <AboutHome />
             </main>
 
