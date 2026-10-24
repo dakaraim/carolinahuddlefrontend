@@ -1,0 +1,198 @@
+
+#live-score {
+    flex: 1;
+    min-width: 0;
+    padding: 25px;
+    background-color: #111;
+    color: #fff;
+    border: 1px solid #292929;
+}
+
+#live-score .home-box-title {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #00a9e0;
+}
+
+#live-score .home-box-title h2 {
+    margin: 0 0 8px;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+#live-score .home-box-title h2 span {
+    color: #00a9e0;
+}
+
+#live-score .home-box-title p {
+    margin: 0;
+    color: #aaa;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+#live-score .live-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.live-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ff3333;
+}
+
+#game-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+#game-info p {
+    margin: 0;
+    color: #aaa;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#score-teams {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 0 25px;
+    border-bottom: 1px solid #333;
+}
+
+.score-team {
+    flex: 1;
+    min-width: 0;
+    text-align: center;
+}
+
+.score-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    margin-bottom: 10px;
+}
+
+.score-logo img {
+    max-width: 65px;
+    max-height: 65px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.score-team h3 {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.score-team p {
+    margin: 5px 0;
+    color: #999;
+    font-size: 11px;
+}
+
+.score-team h2 {
+    margin: 12px 0 0;
+    font-size: 36px;
+}
+
+#game-status {
+    flex-shrink: 0;
+    text-align: center;
+}
+
+#game-status h3 {
+    margin: 0;
+    color: #00a9e0;
+    font-size: 20px;
+}
+
+#game-status p {
+    margin: 8px 0 0;
+    color: #aaa;
+    font-size: 13px;
+}
+
+#team-stats {
+    margin-top: 25px;
+}
+
+#team-stats > h3 {
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.stat-row {
+    display: grid;
+    grid-template-columns: 40px 1fr 40px;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 0;
+    border-bottom: 1px solid #292929;
+    text-align: center;
+}
+
+.stat-row span {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.stat-row p {
+    margin: 0;
+    color: #aaa;
+    font-size: 13px;
+    text-align: center;
+}
+
+#full-stats {
+    width: 100%;
+    margin-top: 25px;
+    padding: 13px;
+    border: 2px solid #00a9e0;
+    background-color: #00a9e0;
+    color: #000;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#full-stats:hover {
+    background-color: transparent;
+    color: #00a9e0;
+}
+
+@media (max-width: 480px) {
+    #live-score {
+        padding: 18px;
+    }
+
+    #score-teams {
+        gap: 5px;
+    }
+
+    .score-team h3 {
+        font-size: 12px;
+    }
+
+    .score-team h2 {
+        font-size: 30px;
+    }
+
+    #game-status h3 {
+        font-size: 17px;
+    }
+
+    .score-logo img {
+        max-width: 48px;
+        max-height: 48px;
+    }
+}
