@@ -1,5 +1,5 @@
 
-import "./AboutHome.css";
+import "./About.css";
 
 const AboutHome = () => {
     return (
@@ -21,4 +21,4 @@ const AboutHome = () => {
     );
 };
 
-export default AboutHome;
+export default About;
