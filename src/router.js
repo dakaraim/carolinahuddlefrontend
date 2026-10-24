@@ -1,4 +1,3 @@
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
 import Forum from "./pages/forum";
@@ -15,3 +14,4 @@ function Router() {
 }
 
 export default Router;
+
