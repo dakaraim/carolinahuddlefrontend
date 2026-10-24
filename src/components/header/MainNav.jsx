@@ -6,30 +6,14 @@ const MainNav = () => {
     return (
         <nav className="main-nav">
             <ul>
-                <li>
-                    <Link to="/">Home</Link>
-                </li>
-                <li>
-                    <Link to="/forum">Forum</Link>
-                </li>
-                <li>
-                    <Link to="/team">Team</Link>
-                </li>
-                <li>
-                    <Link to="/games">Games</Link>
-                </li>
-                <li>
-                    <Link to="/history">History</Link>
-                </li>
-                <li>
-                    <Link to="/news">News</Link>
-                </li>
-                <li>
-                    <Link to="/hof">HOF</Link>
-                </li>
-                <li>
-                    <Link to="/contact">Contact</Link>
-                </li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/forum">Forum</Link></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#hof">HOF</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     );
