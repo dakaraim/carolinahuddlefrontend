@@ -3,7 +3,7 @@ import TeamHeading from "../components/team/teamheading";
 import FeaturedPlayers from "../components/team/featuredplayers";
 import TeamContent from "../components/team/teamcontent";
 import SeasonStats from "../components/team/seasonstats";
-import "./team.css";
+import "../components/team/team.css";
 
 const Team = () => {
   return (
