@@ -11,7 +11,12 @@ const PositionBox = ({ title, image, groups = [] }) => {
         className="position-header"
         onClick={() => setIsOpen(!isOpen)}
       >
-        {image && <img src={image} alt="" />}
+  {image && (
+  <img
+    src={`${process.env.PUBLIC_URL}/images/${image}`}
+    alt={title}
+  />
+)}
         <span>{title}</span>
         <span>{isOpen ? "−" : "+"}</span>
       </button>

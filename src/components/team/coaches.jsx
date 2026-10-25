@@ -14,7 +14,7 @@ function Coaches() {
             {coaches.map((coach) => (
                 <div className="coach" key={coach.name}>
                     <img
-                        src={`/images/${coach.image}`}
+                    src={`${process.env.PUBLIC_URL}/images/${coach.image}`}
                         alt={coach.name}
                     />
                     <div>

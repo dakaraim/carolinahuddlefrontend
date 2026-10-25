@@ -28,8 +28,10 @@ function SeasonSchedule() {
   return (
     <section id="schedule">
       <div id="schedule-title">
-        <img src="/images/carolinapanthers.png" alt="Panthers" />
-        <div>
+        <img
+  src={`${process.env.PUBLIC_URL}/images/carolinapanthers.png`}
+  alt="Panthers"/>
+        <div> 
           <h2>SEASON SCHEDULE</h2>
           <p>CAROLINA PANTHERS</p>
         </div>

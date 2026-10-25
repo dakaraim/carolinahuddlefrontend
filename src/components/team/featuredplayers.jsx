@@ -25,7 +25,7 @@ function FeaturedPlayers() {
                 {featuredPlayers.map((player) => (
                     <article className="player-card" key={player.name}>
                         <img
-                            src={`/images/${player.image}`}
+                        src={`${process.env.PUBLIC_URL}/images/${player.image}`}
                             alt={player.name}
                         />
                         <h3>{player.name}</h3>

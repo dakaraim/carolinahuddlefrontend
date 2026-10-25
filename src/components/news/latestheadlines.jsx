@@ -34,7 +34,8 @@ function LatestHeadlines() {
 
       {headlines.map((headline) => (
         <article className="headline" key={headline.title}>
-          <img src={headline.image} alt={headline.alt} />
+        <img src={`${process.env.PUBLIC_URL}${headline.image}`}
+        alt={headline.alt}/>
           <div>
             <span>{headline.category}</span>
             <h3>{headline.title}</h3>

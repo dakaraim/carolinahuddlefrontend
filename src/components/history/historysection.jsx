@@ -1,4 +1,7 @@
+
 function HistorySection({ title, paragraphs, image, imageAlt }) {
+  const imagePath = `${process.env.PUBLIC_URL}${image.startsWith("/") ? image : `/${image}`}`;
+
   return (
     <section className="history-section">
       <h2>{title}</h2>
@@ -8,8 +11,8 @@ function HistorySection({ title, paragraphs, image, imageAlt }) {
       ))}
 
       <img
-        src={image}
-        alt={imageAlt}
+        src={imagePath}
+        alt={imageAlt || title}
         className="history-image"
       />
     </section>

@@ -24,9 +24,9 @@ function PlayerModal({ player, onClose }) {
         </button>
 
         <img
-          id="modal-player-image"
-          src={`/${player.img_name.replace(/^\/+/, "")}`}
-          alt={player.name}
+        id="modal-player-image"
+         src={`${process.env.PUBLIC_URL}/${player.img_name.replace(/^\/+/, "")}`}
+        alt={player.name}
         />
 
         <div>
