@@ -9,7 +9,7 @@ const MainNav = () => {
                 <li><Link to="/forum">Forum</Link></li>
                 <li><Link to="/team">Team</Link></li>
                 <li><Link to="/games">Games</Link></li>
-                <li><Link to="/about">History</Link></li>
+                <li><Link to="/history">History</Link></li>
                 <li><Link to="/about">News</Link></li>
                 <li><Link to="/about">HOF</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
