@@ -1,6 +1,7 @@
 
-import PositionBox from "./PositionBox";
-import Coaches from "./Coaches";
+import PositionBox from "./positionbox";
+import Coaches from "./coaches";
+
 
 const offense = [
     {
