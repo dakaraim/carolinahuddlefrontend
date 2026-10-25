@@ -4,7 +4,8 @@ import Forum from "./pages/forum";
 import Team from "./pages/team";
 import Games from "./pages/games";
 import History from "./pages/history";
-
+import News from "./pages/news";
+import Hof from "./pages/hof";
 
 function Router() {
     return (
@@ -14,6 +15,8 @@ function Router() {
             <Route path="/team" element={<Team />} />
             <Route path="/games" element={<Games />} />
             <Route path="/history" element={<History />} />
+            <Route path="/news" element={<News />} />
+            <Route path="/hof" element={<Hof />} />
         </Routes>
 
     );
