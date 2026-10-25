@@ -7,10 +7,9 @@ function HofCard({ player, onClick }) {
         alt={player.name}
         className="hof-card-image"
       />
-
       <h3>{player.name}</h3>
     </div>
   );
 }
-
 export default HofCard;
+ 
