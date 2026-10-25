@@ -12,7 +12,7 @@ function Router() {
             <Route path="/forum" element={<Forum />} />
             <Route path="/team" element={<Team />} />
             <Route path="/games" element={<Games />} />
-            <Route path="/history" element={<HistoryContent />} />
+            <Route path="/history" element={<History />} />
         </Routes>
 
     );
