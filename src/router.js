@@ -3,6 +3,7 @@ import Home from "./pages/home";
 import Forum from "./pages/forum";
 import Team from "./pages/team";
 import Games from "./pages/games";
+import History from "./pages/history";
 
 
 function Router() {
