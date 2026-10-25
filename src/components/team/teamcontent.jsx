@@ -1,7 +1,5 @@
-
 import PositionBox from "./positionbox";
 import Coaches from "./coaches";
-
 
 const offense = [
     {
@@ -131,14 +129,25 @@ const defense = [
     }
 ];
 
+
 function TeamContent() {
-    return (
-        <section id="team-content">
-            <PositionBox title="OFFENSE" image="bryceyoung.png" groups={offense} />
-            <PositionBox title="DEFENSE" image="derrickbrown.png" groups={defense} />
-            <Coaches />
-        </section>
-    );
+  return (
+    <section id="team-content">
+      <PositionBox
+        title="OFFENSE"
+        image="bryceyoung.png"
+        groups={offense}
+      />
+
+      <PositionBox
+        title="DEFENSE"
+        image="derrickbrown.png"
+        groups={defense}
+      />
+
+      <Coaches />
+    </section>
+  );
 }
 
 export default TeamContent;
