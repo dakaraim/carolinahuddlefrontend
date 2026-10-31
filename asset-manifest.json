@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/carolinahuddlefrontend/static/css/main.a7e2ebc9.css",
-    "main.js": "/carolinahuddlefrontend/static/js/main.b2a15db3.js",
+    "main.css": "/carolinahuddlefrontend/static/css/main.cdf396bb.css",
+    "main.js": "/carolinahuddlefrontend/static/js/main.8eecf3fa.js",
     "index.html": "/carolinahuddlefrontend/index.html",
-    "main.a7e2ebc9.css.map": "/carolinahuddlefrontend/static/css/main.a7e2ebc9.css.map",
-    "main.b2a15db3.js.map": "/carolinahuddlefrontend/static/js/main.b2a15db3.js.map"
+    "main.cdf396bb.css.map": "/carolinahuddlefrontend/static/css/main.cdf396bb.css.map",
+    "main.8eecf3fa.js.map": "/carolinahuddlefrontend/static/js/main.8eecf3fa.js.map"
   },
   "entrypoints": [
-    "static/css/main.a7e2ebc9.css",
-    "static/js/main.b2a15db3.js"
+    "static/css/main.cdf396bb.css",
+    "static/js/main.8eecf3fa.js"
   ]
 }
