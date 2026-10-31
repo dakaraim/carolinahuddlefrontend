@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import toast from "react-hot-toast";
-import "./ContactForm.css";
+import "./contact.css";
 
 const ContactForm = () => {
     const [sending, setSending] = useState(false);
