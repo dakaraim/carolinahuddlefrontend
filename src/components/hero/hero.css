@@ -65,3 +65,28 @@
         height: 200px;
     }
 }
+
+hero-caption {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 12px 24px;
+    border-left: 4px solid #00a9e0;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    width: max-content;
+    max-width: 85%;
+}
+
+@media (max-width: 480px) {
+    .hero-caption {
+        bottom: 12px;
+        padding: 8px 12px;
+        font-size: 15px;
+    }
+}
