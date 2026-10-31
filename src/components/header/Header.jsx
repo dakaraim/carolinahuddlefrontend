@@ -15,6 +15,7 @@ const Header = () => {
                 onClick={() => setMenuOpen(!menuOpen)}
                 aria-label="Toggle navigation"
                 aria-expanded={menuOpen}
+                aria-controls="main-navigation"
             >
                 ☰
             </button>
