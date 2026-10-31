@@ -4,3 +4,29 @@
     background-color: black;
     color: white;
 }
+
+/* Mobile menu button */
+.menu-toggle {
+    display: none;
+    background: transparent;
+    color: #00a9e0;
+    border: 2px solid #00a9e0;
+    border-radius: 5px;
+    padding: 8px 14px;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.menu-toggle:hover {
+    background-color: #00a9e0;
+    color: black;
+}
+
+@media only screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        margin: 12px auto;
+    }
+}

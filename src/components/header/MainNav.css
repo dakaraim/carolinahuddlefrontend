@@ -24,13 +24,12 @@
 .main-nav a:hover {
     color: #00a9e0;
 }
-
-
 @media only screen and (max-width: 768px) {
     .main-nav {
         display: none;
         background-color: black;
         width: 100%;
+        border-top: 2px solid #00a9e0;
     }
 
     .main-nav.show {
@@ -50,7 +49,14 @@
 
     .main-nav a {
         display: block;
-        padding: 10px;
+        padding: 14px;
         border-bottom: 1px solid #222;
+        font-size: 16px;
+    }
+
+    .main-nav a:hover {
+        background-color: #00a9e0;
+        color: black;
     }
 }
+
