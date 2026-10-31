@@ -6,7 +6,7 @@ import Games from "./pages/games";
 import History from "./pages/history";
 import News from "./pages/news";
 import Hof from "./pages/hof";
-
+import Contact from "./pages/contact";
 function Router() {
     return (
         <Routes>
@@ -17,6 +17,7 @@ function Router() {
             <Route path="/history" element={<History />} />
             <Route path="/news" element={<News />} />
             <Route path="/hof" element={<Hof />} />
+            <Route path="/contact" element={<Contact />} />
         </Routes>
 
     );
