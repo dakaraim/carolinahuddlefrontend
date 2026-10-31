@@ -9,8 +9,8 @@ const MainNav = ({ menuOpen, setMenuOpen }) => {
 
     return (
         <nav
-            id="main-navigation"
-            className={`main-nav ${menuOpen ? "open" : ""}`}
+            id="main-nav"
+            className={`main-nav ${menuOpen ? "show" : ""}`}
         >
             <ul>
                 <li><Link to="/" onClick={closeMenu}>Home</Link></li>

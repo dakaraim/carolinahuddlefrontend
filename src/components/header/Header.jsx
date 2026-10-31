@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import "./Header.css";
 import HeaderTop from "./HeaderTop";
@@ -6,18 +7,23 @@ import MainNav from "./MainNav";
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
+
     return (
         <header className="main-header">
             <HeaderTop />
 
             <button
+                id="menu-toggle"
                 className="menu-toggle"
-                onClick={() => setMenuOpen(!menuOpen)}
+                onClick={toggleMenu}
                 aria-label="Toggle navigation"
                 aria-expanded={menuOpen}
-                aria-controls="main-navigation"
+                aria-controls="main-nav"
             >
-                ☰
+                {menuOpen ? "✕" : "☰"}
             </button>
 
             <MainNav

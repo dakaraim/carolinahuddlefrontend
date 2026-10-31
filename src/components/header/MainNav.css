@@ -25,17 +25,15 @@
     color: #00a9e0;
 }
 
-/* Mobile toggle support */
 
 @media only screen and (max-width: 768px) {
-
     .main-nav {
         display: none;
         background-color: black;
         width: 100%;
     }
 
-    .main-nav.open {
+    .main-nav.show {
         display: block;
     }
 
