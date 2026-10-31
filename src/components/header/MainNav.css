@@ -43,3 +43,34 @@
         border-bottom: 1px solid #222;
     }
 }
+
+
+/* Mobile navigation toggle */
+@media (max-width: 768px) {
+    .main-nav {
+        display: none;
+        width: 100%;
+    }
+
+    .main-nav.open {
+        display: block;
+    }
+
+    .main-nav ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .main-nav li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-nav a {
+        display: block;
+        padding: 14px;
+    }
+}
