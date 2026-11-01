@@ -1,6 +1,4 @@
-```css
 /* HOF PAGE */
-
 #hof-page {
   min-height: 100vh;
   padding-bottom: 50px;
@@ -92,12 +90,14 @@
   color: #000;
 }
 
-/* HOF GRID */
+/* HOF GRID - 2 ROWS X 4 COLUMNS */
 
 #hof-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-rows: repeat(2, auto);
   gap: 24px;
+  width: 100%;
   margin-top: 30px;
 }
 
@@ -179,7 +179,7 @@
   max-width: 800px;
   max-height: 90vh;
   overflow-y: auto;
-  padding: 55px 65px 35px;
+  padding: 55px 35px 35px;
   background: #07131b;
   border: 2px solid #00a9e0;
 }
@@ -223,7 +223,7 @@
 
 .modal-arrow {
   flex-shrink: 0;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 42px;
@@ -248,7 +248,7 @@
   outline-offset: 3px;
 }
 
-/* RESPONSIVE */
+/* TABLET */
 
 @media (max-width: 1000px) {
   #hof-heading,
@@ -258,8 +258,11 @@
 
   #hof-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: auto;
   }
 }
+
+/* MOBILE */
 
 @media (max-width: 600px) {
   #hof-heading {
@@ -326,13 +329,5 @@
   .modal-arrow {
     width: 45px;
     height: 40px;
-  }
-
-  .previous-player {
-    margin-top: 5px;
-  }
-
-  .next-player {
-    margin-bottom: 5px;
   }
 }
