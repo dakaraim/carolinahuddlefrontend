@@ -95,6 +95,17 @@ const players = [
 function HofGrid() {
   const [selectedPlayer, setSelectedPlayer] = useState(null);
 
+  const changePlayer = (direction) => {
+    const currentIndex = players.findIndex(
+      (player) => player._id === selectedPlayer._id
+    );
+
+    const nextIndex =
+      (currentIndex + direction + players.length) % players.length;
+
+    setSelectedPlayer(players[nextIndex]);
+  };
+
   return (
     <>
       <div id="hof-grid">
@@ -118,6 +129,8 @@ function HofGrid() {
       <PlayerModal
         player={selectedPlayer}
         onClose={() => setSelectedPlayer(null)}
+        onNext={() => changePlayer(1)}
+        onPrevious={() => changePlayer(-1)}
       />
     </>
   );
