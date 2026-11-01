@@ -1,11 +1,4 @@
-
 import { useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
-
-import "swiper/css";
-import "swiper/css/navigation";
-
 import HofCard from "./hofcard";
 import PlayerModal from "./playermodal";
 
@@ -96,6 +89,8 @@ function HofGrid() {
   const [selectedPlayer, setSelectedPlayer] = useState(null);
 
   const changePlayer = (direction) => {
+    if (!selectedPlayer) return;
+
     const currentIndex = players.findIndex(
       (player) => player._id === selectedPlayer._id
     );
@@ -109,21 +104,13 @@ function HofGrid() {
   return (
     <>
       <div id="hof-grid">
-        <Swiper
-          modules={[Navigation]}
-          navigation
-          spaceBetween={20}
-          slidesPerView={1}
-        >
-          {players.map((player) => (
-            <SwiperSlide key={player._id}>
-              <HofCard
-                player={player}
-                onClick={() => setSelectedPlayer(player)}
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        {players.map((player) => (
+          <HofCard
+            key={player._id}
+            player={player}
+            onClick={() => setSelectedPlayer(player)}
+          />
+        ))}
       </div>
 
       <PlayerModal
