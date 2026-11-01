@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import HofCard from "./hofcard";
 import PlayerModal from "./playermodal";
@@ -96,7 +95,7 @@ function HofGrid() {
           <HofCard
             key={player._id}
             player={player}
-            onSelect={setSelectedPlayer}
+            onClick={() => setSelectedPlayer(player)}
           />
         ))}
       </div>
